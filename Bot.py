@@ -40,12 +40,19 @@ async def start(_, m: Message):
     )
 
 
-@Bot.on_message(filters.command("help"))
+@Bot.on_message(filters.command("cmds"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot Status**.\n/help - **To see help menu.**\n/bin [query] - **To check Bin.**"
+        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin [query] - **To check Bin\n/chk - **To Check CC"
     )
 
+@Bot.on_message(filters.command("chk"))
+async def chk(_, m: Message):
+    if len(m.command) < 2:
+        msg = await m.reply_text("Under Construction`")
+        await sleep(999999999)
+        await msg.delete()
+    
 
 @Bot.on_message(filters.command("bin"))
 async def bin(_, m: Message):
