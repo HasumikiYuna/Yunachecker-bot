@@ -35,7 +35,7 @@ async def start(_, m: Message):
         ]
     )
     await m.reply_text(
-        f"Hi! {messy} \n Bot Made By @fakehecker\n Use /help to know my commands",
+        f"Hi! {messy} \nBot Made By @fakehecker\n Use /cmds to know my commands",
         reply_markup=keyboard,
     )
 
@@ -92,6 +92,6 @@ async def bin(_, m: Message):
         await mafia.edit(caption)
 
 
-print("Bot IS Alive Now")
+print("Bot Is Alive Now")
 
 Bot.run()
