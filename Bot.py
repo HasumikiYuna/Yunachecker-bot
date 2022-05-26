@@ -24,18 +24,18 @@ async def start(_, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Channel", url="https://t.me/szteambots"),
-                InlineKeyboardButton("Support", url="https://t.me/slbotzone"),
+                InlineKeyboardButton("Channel", url="https://t.me/heckerman"),
+                InlineKeyboardButton("Developer", url="https://t.me/fakehecker"),
             ],
             [
                 InlineKeyboardButton(
-                    "Source code", url="https://github.com/ImDenuwan/Bin-Checker-Bot"
+                    "Source code", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 )
             ],
         ]
     )
     await m.reply_text(
-        f"Hi! {messy} \nI can Check bins Valid or Invalid.\n\nTo see more check /help command",
+        f"Hi! {messy} \n Bot Made By @fakehecker\n Use /help to know my commands",
         reply_markup=keyboard,
     )
 
@@ -43,20 +43,20 @@ async def start(_, m: Message):
 @Bot.on_message(filters.command("help"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot alive**.\n/help - **To see help menu.**\n/bin [qoury] - **To check Bin is valide or Invalid.**"
+        "/start - **To check bot Status**.\n/help - **To see help menu.**\n/bin [query] - **To check Bin.**"
     )
 
 
 @Bot.on_message(filters.command("bin"))
 async def bin(_, m: Message):
     if len(m.command) < 2:
-        msg = await m.reply_text("Please Provide a Bin!\nEx:- `/bin 401658`")
+        msg = await m.reply_text("First Know What is bin, motherfucker!`")
         await sleep(15)
         await msg.delete()
 
     else:
 
-        mafia = await m.reply_text("processing...")
+        mafia = await m.reply_text("Checking Bin, Hold On....")
         inputm = m.text.split(None, 1)[1]
         bincode = 6
         ask = inputm[:bincode]
@@ -64,7 +64,7 @@ async def bin(_, m: Message):
         res = req["result"]
 
         if res == False:
-            return await mafia.edit("❌ #INVALID_BIN ❌\n\nPlease provide a valid bin.")
+            return await mafia.edit("❌ #INVALID_BIN \nTry Again ;)")
         da = req["data"]
         bi = da["bin"]
         ve = da["vendor"]
@@ -80,7 +80,7 @@ async def bin(_, m: Message):
         
         mfrom = m.from_user.mention
         caption = f"""
-╔ Valid :- `{res} ✅`\n╚ Bin :- `{bi}`\n\n╔ Brand :- `{ve}`\n╠ Type :- `{ty}`\n╚ Level :- `{le}`\n\n╔ Bank :- `{ban} ({co})`\n╠ Country :- `{nm} {em}`\n╠ Alpha2 :- `{cod}`\n╚ DialCode :- `{dial}`\n\n**↠ Checked By :-** {mfrom}\n**↠ __Bot By :-** [Denuwan](https://github.com/ImDenuwan/Bin-Checker-Bot)__
+╔ Valid :- `{res} ✅`\n╚ Bin :- `{bi}`\n\n╔ Brand :- `{ve}`\n╠ Type :- `{ty}`\n╚ Level :- `{le}`\n\n╔ Bank :- `{ban} ({co})`\n╠ Country :- `{nm} {em}`\n╠ Alpha2 :- `{cod}`\n╚ DialCode :- `{dial}`\n\n**↠ Checked By :-** {mfrom}\n**↠ __Bot By :-** [HECKER](t.me/fakehecker__
 """
         await mafia.edit(caption)
 
