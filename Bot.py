@@ -29,7 +29,7 @@ async def start(_, m: Message):
             ],
             [
                 InlineKeyboardButton(
-                    "Source code", url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    "Source code", url="https://github.com/Junaid433/HeckerMan-Bot"
                 )
             ],
         ]
