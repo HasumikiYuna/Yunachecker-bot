@@ -43,17 +43,20 @@ async def start(_, m: Message):
 @Bot.on_message(filters.command("cmds"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin [query] - **To check Bin\n/chk - **To Check CC"
+        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin Query - **To check Bin\n/chk - **Stripe CHARGE"
     )
 
 @Bot.on_message(filters.command("chk"))
 async def chk(_, m: Message):
     if len(m.command) < 2:
-        msg = await m.reply_text("Under Construction`")
+        msg = await m.reply_text("Please Enter A Valid CC")
         await sleep(999999999)
         await msg.delete()
-    
+      
+    else: 
 
+        mafia = await m.reply_text("CC -» N/A\nSTATUS -» APPROVED ✅\nResponse -» SUCCESSFULLY CHARGED $1\nGATE -» STRIPE CHARGE\nREQUEST BY -» update.message.chat.username\nBOT BY -» @fakehecker")
+        
 @Bot.on_message(filters.command("bin"))
 async def bin(_, m: Message):
     if len(m.command) < 2:
@@ -95,3 +98,4 @@ async def bin(_, m: Message):
 print("Bot Is Alive Now")
 
 Bot.run()
+
