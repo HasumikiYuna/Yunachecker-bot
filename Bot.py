@@ -68,7 +68,7 @@ async def chk(_, m: Message):
 @Bot.on_message(filters.command("cmds"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin Query - **To check Bin\n/chk - **Stripe CHARGE\n/sk - **SK Checker"
+        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin Query - **To check Bin\n/chk - **Stripe CHARGE\n/sk - **SK Checker")
          
 @Bot.on_message(filters.command("bin"))
 async def bin(_, m: Message):
