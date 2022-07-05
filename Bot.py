@@ -43,7 +43,7 @@ async def start(_, m: Message):
 @Bot.on_message(filters.command("cmds"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin Query - **To check Bin\n/chk - **Stripe CHARGE\n/sk - **SK Checker"
+        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin Query - **To check Bin**\n/chk - **Stripe CHARGE**\n/sk - **SK Checker**\n/ping - Latency Check**\n\nGates Maintained By : @fakehecker"
     )
 
 @Bot.on_message(filters.command("sk"))
@@ -61,7 +61,15 @@ async def chk(_, m: Message):
     else: 
 
         mafia = await m.reply_text("CC -» N/A\nSTATUS -» APPROVED ✅\nResponse -» SUCCESSFULLY CHARGED $1\nGATE -» STRIPE CHARGE\nREQUEST BY -» update.message.chat.username\nBOT BY -» @fakehecker")
-        
+
+
+
+
+@Bot.on_message(filters.command("cmds"))
+async def help(_, m: Message):
+    await m.reply_text(
+        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin Query - **To check Bin\n/chk - **Stripe CHARGE\n/sk - **SK Checker"
+         
 @Bot.on_message(filters.command("bin"))
 async def bin(_, m: Message):
     if len(m.command) < 2:
@@ -95,7 +103,7 @@ async def bin(_, m: Message):
         
         mfrom = m.from_user.mention
         caption = f"""
-╔ Valid :- `{res} ✅`\n╚ Bin :- `{bi}`\n\n╔ Brand :- `{ve}`\n╠ Type :- `{ty}`\n╚ Level :- `{le}`\n\n╔ Bank :- `{ban} ({co})`\n╠ Country :- `{nm} {em}`\n╠ Alpha2 :- `{cod}`\n╚ DialCode :- `{dial}`\n\n**↠ Checked By :-** {mfrom}\n**↠ __Bot By :-** [HECKER](t.me/fakehecker__
+╔ Valid ￫ `{res} ✅`\n╚ Bin ￫ `{bi}`\n\n╔ Brand ￫ `{ve}`\n╠ Type ￫ `{ty}`\n╚ Level ￫ `{le}`\n\n╔ Bank ￫ `{ban} ({co})`\n╠ Country ￫ `{nm} {em}`\n╠ Alpha2 ￫ `{cod}`\n╚ DialCode ￫ `{dial}`\n\n**↠ Checked By ￫** {mfrom}\n**↠ __Bot By ￫** [HECKER](t.me/fakehecker__
 """
         await mafia.edit(caption)
 
