@@ -1,2 +1,2 @@
-worker: python3 Bot.py
-worker: cd flex && python3 ping.py
+
+worker: python3 Bot.py && cd flex && python3 ping.py
