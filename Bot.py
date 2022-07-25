@@ -53,7 +53,7 @@ async def sk(_, m: Message):
     )
 @Bot.on_message(filters.command("chk"))
 async def chk(_, m: Message):
-    if len(m.command) < 10:
+    if len(m.command) < 5:
         msg = await m.reply_text("Please Enter A Valid CC")
         await sleep(999999999)
         await msg.delete()
