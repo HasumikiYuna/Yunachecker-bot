@@ -43,7 +43,7 @@ async def start(_, m: Message):
 @Bot.on_message(filters.command("cmds"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin - **To check Bin**\n/chk - **Stripe CHARGE**\n/sk - **SK Checker**\n/ping - **Latency Check\n/q - **Crypto Price Lookup**\n\nGates Maintained By : @fakehecker"
+        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin - **To check Bin**\n/chk - **Stripe CHARGE**\n/sk - **SK Checker**\n/ping - **Latency Check\n/p - **Crypto Price Lookup**\n\nGates Maintained By : @fakehecker"
     )
 
 @Bot.on_message(filters.command("sk"))
