@@ -24,12 +24,12 @@ async def start(_, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Channel", url="https://t.me/heckerman"),
-                InlineKeyboardButton("Developer", url="https://t.me/fakehecker"),
+                InlineKeyboardButton("Admin Bot", url="https://t.me/Vtuber_NIJGenYunaCh"),
+                InlineKeyboardButton("Group", url="hhttps://t.me/ccdroperr"),
             ],
             [
                 InlineKeyboardButton(
-                    "Source code", url="https://github.com/Junaid433/HeckerMan-Bot"
+                    "Source code", url="https://github.com/HasumikiYuna/Yunachecker-bot"
                 )
             ],
         ]
@@ -43,7 +43,7 @@ async def start(_, m: Message):
 @Bot.on_message(filters.command("cmds"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin - **To check Bin**\n/chk - **Stripe CHARGE**\n/sk - **SK Checker**\n/ping - **Latency Check\n/p - **Crypto Price Lookup**\n\nGates Maintained By : @fakehecker"
+        "/start - **To check bot Status**.\n/cmds - **To check bot commands.**\n/bin - **To check Bin**\n/chk - **Stripe CHARGE**\n/sk - **SK Checker**\n/ping - **Latency Check\n/p - **Crypto Price Lookup**\n\nGates Maintained By : @Vtuber_NIJGenYunaCh"
     )
 
 @Bot.on_message(filters.command("sk"))
@@ -60,7 +60,7 @@ async def chk(_, m: Message):
       
     else: 
 
-        mafia = await m.reply_text("CC -» N/A\nSTATUS -» APPROVED ✅\nResponse -» SUCCESSFULLY CHARGED $1\nGATE -» STRIPE CHARGE\nRISK  -» HIGHEST \nREQUEST BY -» /{mfrom}\nBOT BY -» @fakehecker")
+        mafia = await m.reply_text("CC -» N/A\nSTATUS -» APPROVED ✅\nResponse -» SUCCESSFULLY CHARGED $1\nGATE -» STRIPE CHARGE\nRISK  -» HIGHEST \nREQUEST BY -» /{mfrom}\nBOT BY -» @Vtuber_NIJGenYunaCh")
 
 
 
@@ -103,8 +103,8 @@ async def bin(_, m: Message):
         
         mfrom = m.from_user.mention
         caption = f"""
-╔ Valid ￫ `{res} ✅`\n╚ Bin ￫ `{bi}`\n\n╔ Brand ￫ `{ve}`\n╠ Type ￫ `{ty}`\n╚ Level ￫ `{le}`\n\n╔ Bank ￫ `{ban} ({co})`\n╠ Country ￫ `{nm} {em}`\n╠ Alpha2 ￫ `{cod}`\n╚ DialCode ￫ `{dial}`\n\n**↠ Checked By ￫** {mfrom}\n**↠ __Bot By ￫** [HECKER] 
- (t.me/fakehecker__
+╔ Valid ￫ `{res} ✅`\n╚ Bin ￫ `{bi}`\n\n╔ Brand ￫ `{ve}`\n╠ Type ￫ `{ty}`\n╚ Level ￫ `{le}`\n\n╔ Bank ￫ `{ban} ({co})`\n╠ Country ￫ `{nm} {em}`\n╠ Alpha2 ￫ `{cod}`\n╚ DialCode ￫ `{dial}`\n\n**↠ Checked By ￫** {mfrom}\n**↠ __Bot By ￫** [YUNA] 
+ (t.me/Vtuber_NIJGenYunaCh__
 """
         await mafia.edit(caption)
 
