@@ -1,5 +1,5 @@
-# HeckerMan-Bot
-This source was taken from @imdenuan , i made a lot of modifications later.
+# YunaCC-CheckerBot
+This source was taken from @Vtuber_NIJGenYunaCh
 
 Deployment : 
 
