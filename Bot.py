@@ -104,7 +104,7 @@ async def bin(_, m: Message):
         mfrom = m.from_user.mention
         caption = f"""
 ╔ Valid ￫ `{res} ✅`\n╚ Bin ￫ `{bi}`\n\n╔ Brand ￫ `{ve}`\n╠ Type ￫ `{ty}`\n╚ Level ￫ `{le}`\n\n╔ Bank ￫ `{ban} ({co})`\n╠ Country ￫ `{nm} {em}`\n╠ Alpha2 ￫ `{cod}`\n╚ DialCode ￫ `{dial}`\n\n**↠ Checked By ￫** {mfrom}\n**↠ __Bot By ￫** [YUNA] 
- (t.me/Vtuber_NIJGenYunaCh__
+ t.me/Vtuber_NIJGenYunaCh__
 """
         await mafia.edit(caption)
 
